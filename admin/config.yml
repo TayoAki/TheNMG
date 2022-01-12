@@ -1,0 +1,84 @@
+backend:
+  name: test-repo
+  #name: git-gateway
+  branch: main
+
+media_folder: "/img"
+public_folder: "/img"
+
+collections:
+  - label: "Content Editor"
+    name: "edit_content"
+    files:
+      - label: "Click Here To Change Your Home Page"
+        name: "box1"
+        file: "_data/homepage.yaml"
+        fields:
+          - label: "header"
+            name: "header"
+            widget: "object"
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Subtitle, name: subtitle, widget: string}
+              - {label: Button, name: button, widget: string}
+          - label: "Transparent Box"
+            name: "box"
+            widget: "object"
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Content, name: content, widget: markdown}
+              - {label: Button, name: button, widget: string}
+
+      - label: "Click Here To Change Your Services Page"
+        name: "services"
+        file: "/_data/services.yaml"
+        fields:
+          - label: "title"
+            name: "intro"
+            widget: "object"
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: item-1, name: number, widget: string}
+          - label: "Your services"
+            name: "services"
+            file: "service_1.md"
+            fields:
+            - {label: Title, name: title, widget: string}
+            - {label: item-1, name: item, widget: string}
+            - {label: item-1, name: number, widget: string}
+            - {label: Your Services, name: body, widget: markdownn}
+      - label: "Click Here To Change Your About Page"
+        name: "edit_about"
+        file: "/_data/about.yaml"
+        fields:          
+          - label: "title"
+            name: "main"
+            widget: "object"
+            fields:
+              - {label: Title, name: pagetitle, widget: string}
+          - label: "Big Box"
+            name: "bigbox"
+            widget: "object"
+            fields:
+              - {label: Title, name: bigbox_title, widget: string}
+              - {label: Text, name: bigbox_text, widget: markdown}
+          - label: "Bottom Box"
+            name: "bottom"
+            widget: "object"
+            fields:
+              - {label: Title, name: bottombox_title, widget: string}
+              - {label: Text, name: bottombox_text, widget: markdown}
+      - label: "Click Here To Change Your Contact Page"
+        name: "edit_contact"
+        file: "/_data/contact.yaml"
+        fields:          
+          - label: "title"
+            name: "header"
+            widget: "object"
+            fields:
+              - {label: Title, name: title, widget: string}
+          - label: "Button Text"
+            name: "contact-button"
+            widget: "object"
+            fields:
+              - {label: Button Text, name: button_text, widget: string}
