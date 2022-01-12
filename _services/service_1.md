@@ -9,4 +9,3 @@ number: item-1
 * Create Quality Management System
 * Corrective Action/Preventive Action (CAPA) Management
 * Develop customized Training Programs
-* Testing
