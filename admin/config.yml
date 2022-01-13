@@ -33,7 +33,7 @@ collections:
             fields:
               - {label: Email Adress, name: email, widget: string}
               - {label: Phone Number, name: phone, widget: string}
-              - {label: Free Qoute, name: qoute, widget: string}
+              - {label: Free Quote, name: quote, widget: string}
 
       - label: "Click Here To Change Your Home Page"
         name: "box1"
@@ -87,8 +87,9 @@ collections:
             widget: "object"
             fields:
               - {label: Title, name: title, widget: string}
+              - {label: Subtitle, name: subtext, widget: string}
           - label: "Button Text"
-            name: "contact-button"
+            name: "button"
             widget: "object"
             fields:
               - {label: Button Text, name: button_text, widget: string}
