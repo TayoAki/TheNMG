@@ -23,15 +23,16 @@ collections:
   - label: "Content Editor"
     name: "edit_content"
     files:
+
       - label: "Click Here To Change Your Site Info Banner"
-        name: "Site Info"
+        name: "Site_Info"
         file: "_data/site.yml"
         fields:
-          - label: "title"
-            name: "intro"
+          - label: "banner"
+            name: "banner"
             widget: "object"
             fields:
-              - {label: Email Adress, name: email, widget: string}
+              - {label: Email Address, name: email, widget: string}
               - {label: Phone Number, name: phone, widget: string}
               - {label: Free Quote, name: quote, widget: string}
 
