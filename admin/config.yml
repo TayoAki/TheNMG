@@ -25,7 +25,7 @@ collections:
     files:
       - label: "Click Here To Change Your Site Info Banner"
         name: "Site Info"
-        file: "/_data/site.yaml"
+        file: "/_data/site.yml"
         fields:
           - label: "title"
             name: "intro"
@@ -37,7 +37,7 @@ collections:
 
       - label: "Click Here To Change Your Home Page"
         name: "box1"
-        file: "_data/homepage.yaml"
+        file: "_data/homepage.yml"
         fields:
           - label: "header"
             name: "header"
@@ -59,7 +59,7 @@ collections:
      
       - label: "Click Here To Change Your About Page"
         name: "edit_about"
-        file: "/_data/about.yaml"
+        file: "/_data/about.yml"
         fields:          
           - label: "title"
             name: "main"
@@ -80,7 +80,7 @@ collections:
               - {label: Text, name: bottombox_text, widget: text}
       - label: "Click Here To Change Your Contact Page"
         name: "edit_contact"
-        file: "/_data/contact.yaml"
+        file: "/_data/contact.yml"
         fields:          
           - label: "title"
             name: "header"
