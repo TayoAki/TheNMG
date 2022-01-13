@@ -26,7 +26,7 @@ collections:
 
       - label: "Click Here To Change Your Site Info Banner"
         name: "Site_Info"
-        file: "_data\info.yml"
+        file: "_data/info.yml"
         fields:
           - label: "banner"
             name: "banner"
